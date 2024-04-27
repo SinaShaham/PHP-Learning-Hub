@@ -10,8 +10,12 @@ function inspect($value){
     echo '</pre>';
 }
 
-
+unset($numbers[2]);
 inspect($names);
+inspect($numbers);
+
+// For reindexing use the following:
+$numbers = array_values($numbers);
 inspect($numbers);
 
 ?>
