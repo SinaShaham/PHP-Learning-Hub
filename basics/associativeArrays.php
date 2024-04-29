@@ -1,33 +1,22 @@
 
+
+
 <?php
+
+// php -S localhost:8000 
+// http://localhost/Project1/PHP-Learning-Hub/variables/strings.php
 
 $output = null;
 
-$ids = [10,20,14, 45, 68];
-$users = ['user4', 'user2', 'user3'];
-
-// count
-$output = count($ids);
-
-// sort
-sort($ids);
-sort($users);
-
-
-// array_push
-array_push($ids, -209);
-
-// array_pop
-array_pop($users);
-
-
-// Summing numbers
-$output = 'Sum of IDs: ' . array_sum($ids);
-
-$tags = 'tech, code, programming';
-$tagsArr = explode(',',$tags);
-var_dump($tagsArr);
-
+$user = [
+    'name' => 'John',
+    'email' => 'john@gmail.com',
+    'password' => '2341234',
+    'hobbies' => ['Tennis', 'Video Games']
+];
+var_dump($user);
+$output = $user['name'];
+$output = $user['hobbies'][1];
 ?>
 
 
@@ -48,13 +37,7 @@ var_dump($tagsArr);
             <h2 class = "text-xl font-semibold my-4">IDs Array:</h2>
             <p>
             <pre>
-                <?php print_r($ids); ?>
-            </pre>
-            </p> 
-            <h2 class = "text-xl font-semibold my-4">Users Array:</h2>
-            <p>
-            <pre>
-                <?php print_r($users); ?>
+                <?php print_r($user); ?>
             </pre>
             </p> 
         </div>
