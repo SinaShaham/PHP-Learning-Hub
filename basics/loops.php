@@ -1,6 +1,8 @@
+
+
 <?php
 
-
+//http://localhost/Project1/PHP-Learning-Hub/basics/loops.php
 //Basic For Loop
 for($i = 0; $i<10; $i++){
     echo $i . '<br />';
